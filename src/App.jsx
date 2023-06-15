@@ -6,6 +6,8 @@ import LoginState from './components/LoginState';
 import ConnectedState from './components/ConnectedState';
 import VerifyUser from './components/VerifyUser';
 
+import Logo from './assets/white_logo_full.png'
+
 function App() {
 
   const [userName, setUserName] = useState("User");
@@ -38,9 +40,9 @@ function App() {
         <div className="hero">
           <div className="left">
             <div className="name-photo-container">
-              <div className="profileCircle"></div>
+              <div className="profileCircle"><img src={Logo} alt="" /></div>
               <div className="profileNameAddressContainer">
-                <h1 className='profileName'>Hello {userName}!👋</h1>
+                <h1 className='profileName'>Welcome to BlockID (Sepolia Testnet)</h1>
                 <p className='profileNameWalletAddress'>UniqueID: {sessionStorage.getItem('connectedUser')}</p>
               </div>
 

@@ -68,7 +68,7 @@ const VerifyUser = (props) => {
             <div className='github_container'>
             <button 
             type="button" 
-            onClick={()=> window.open('https://github.com/indranilchutia')}
+            onClick={()=> window.open('https://github.com/IndranilChutia/Blockchain_IdSystem')}
             className='github_button'>
                 <img src={githubLogo} alt="github_logo" className='github_logo'/>
                 Github

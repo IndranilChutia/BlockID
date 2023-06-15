@@ -44,13 +44,16 @@
   width: 100px;
   height: 100px;
   border-radius: 20%;
-  background-color: #303030;
-
-  background-image: url('./assets/personWhite.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.profileCircle img{
+  width: 80%;
+}
+
 .profileNameAddressContainer{
   margin-left: 20px;
 }
