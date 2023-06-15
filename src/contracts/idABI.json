@@ -1,0 +1,167 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_Address",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_Name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_Phone",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_Aadhar",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_PAN",
+				"type": "string"
+			}
+		],
+		"name": "addDetails",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "idMap",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "Name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Phone",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Aadhar",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "PAN",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_Address",
+				"type": "address"
+			}
+		],
+		"name": "isNew",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_Address",
+				"type": "address"
+			}
+		],
+		"name": "isVerified",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_Address",
+				"type": "address"
+			}
+		],
+		"name": "showName",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_Address",
+				"type": "address"
+			}
+		],
+		"name": "viewDetails",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "Name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Phone",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Aadhar",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "PAN",
+						"type": "string"
+					}
+				],
+				"internalType": "struct ID.idStruct",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

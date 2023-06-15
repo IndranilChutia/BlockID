@@ -1,38 +1,303 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main{
+  background: linear-gradient(90deg, #ffc3a0 0%, #ffafbd 100%);
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.hero{
+  height: 100%;
+  display: flex;
+  padding: 0 8%;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left{
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.right{
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 80vh;
+  background-color: blanchedalmond;
+}
+
+.name-photo-container{
+  margin: 40px;
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+}
+
+.profileCircle{
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  background-color: #303030;
+
+  background-image: url('./assets/personWhite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.profileNameAddressContainer{
+  margin-left: 20px;
+}
+
+.profileName{
+  font-size: 26px;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+.profileNameWalletAddress{
+  font-size: 14px;
+}
+
+.login-prompt-container{
+  margin: 100px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.loginPromptText{
+  margin: 0px 0 40px 0px;
+  font-weight: 500
+}
+
+
+.loginBox{
+  height: 150px;
+  width: 300px;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.login-text{
+  padding: 20px;
+  font-weight: 500;
+}
+
+.connect-wallet-button{
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: #303030;
   color: white;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.connectedStateContainer{
+  margin: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ExistingUserContainer h2{
+  margin: 30px 0;
+}
+
+.refreshDataButton{
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: #303030;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.updateDataButton{
+  margin-left: 10px;
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: #303030;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.registerForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.registerForm label input{
+  padding: 10px;
+  width: 80%;
+  font-size: medium;
+}
+
+.registerButton{
+  margin-top: 30px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  background-color: #303030;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Verify User Part */
+
+.verifyUserContainer{
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.verifyUserTitle{
+  /* text-align: center; */
+  color: #303030;
+  margin: 10px 0;
+}
+
+.userInfoContainer{
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userNotVerifiedCircle{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+
+  background-image: url('./assets/personDark.svg');
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size: cover;
+}
+
+.userVerifiedCircle{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  position: relative;
+
+  background-image: url('./assets/personDark.svg');
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size: cover;
+}
+
+.tickMark{
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-image: url('./assets/verified.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.verifyUserForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uniqueID-label{
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.uniqueID-label input{
+  margin: 10px 0;
+  display: block;
+  padding: 10px;
+  width: 400px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #303030;
+}
+
+.checkUserButton{
+  padding: 10px 30px;
+  border-radius: 4px;
+  background-color: #303030;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.statusContainer{
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.statusTitle{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.userName-verify{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+/* Github Repo Link */
+
+
+.github_container{
+  display: flex;
+  justify-content: end;
+}
+
+.github_logo{
+  width: 30px;
+  margin-right: 10px;
+}
+
+.github_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(16, 16, 16); 
+  transition-property: all; 
+  font-weight: 700 ;
+  color: whitesmoke; 
+  font-size: 0.875rem;
+  border-radius: 50px; 
+  border-width: 1px; 
+  border-color: #000000; 
 }
