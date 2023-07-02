@@ -4,9 +4,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+.App{
+  background: linear-gradient(90deg, #ffc3a0 0%, #ffafbd 100%);
+  height: 100%;
+}
 
 .main{
-  background: linear-gradient(90deg, #ffc3a0 0%, #ffafbd 100%);
   height: 100vh;
 }
 
@@ -294,6 +297,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 130px;
+  max-width: 200px;
   padding: 0.5rem 1.5rem;
   background-color: rgb(16, 16, 16); 
   transition-property: all; 
@@ -303,4 +308,6 @@
   border-radius: 50px; 
   border-width: 1px; 
   border-color: #000000; 
+
+  cursor: pointer;
 }

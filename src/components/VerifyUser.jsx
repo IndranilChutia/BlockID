@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import idABI from '../contracts/idABI.json'
 import { ethers } from 'ethers';
-import githubLogo from '../assets/github.png';
+
+import GithubButton from './GithubButton';
 
 
 const VerifyUser = (props) => {
@@ -65,16 +66,10 @@ const VerifyUser = (props) => {
 
 
             </div>
-            <div className='github_container'>
-            <button 
-            type="button" 
-            onClick={()=> window.open('https://github.com/IndranilChutia/Blockchain_IdSystem')}
-            className='github_button'>
-                <img src={githubLogo} alt="github_logo" className='github_logo'/>
-                Github
-            </button>
-            </div>
             
+            <div className='github_container'>
+                <GithubButton />
+            </div>    
         </div>
     );
 };
